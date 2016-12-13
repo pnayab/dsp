@@ -54,7 +54,7 @@ cross-platform.
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-**Type this on the termial  Python --version**
+Type this on the termial: **Python --version**
 
  
 

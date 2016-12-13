@@ -46,15 +46,15 @@ cross-platform.
 
 **Course material for the bootcamp is currently based on Python version 2.7. Students have the option of using either version 2 or 3 during the bootcamp, but should be aware of some differences in code between the two versions.**  
 
-Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+**I installed python version 2.7 because there is more community support for version 2.**
+
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+** Type this on the termial  Python --version**
 
  
 

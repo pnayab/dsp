@@ -54,11 +54,11 @@ In contrast, to evaluate whether an object is a member of a list, Python has to 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 Lambda is the keyword used in python to describe an anonymous function. Anonymous functions are also called lambda functions. Lambda functions can have any number of arguments but only one expression. The expression is evaluated and returned. We use lambda functions when we require a nameless function for a short period of time. In Python, we generally use it as an argument to a higher-order function (a function that takes in other functions as arguments). Lambda functions are used along with built-in functions like filter(), map() etc.
---Example 1:
+_Example 1:
 double = lambda x: x * 2
 print(double(5))
 
---Example 2:
+_Example 2:
 sorted(["Pallavi", "Jai", "Nayab", "anushri"], key = lambda word: word.lower())
 
 

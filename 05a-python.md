@@ -29,22 +29,23 @@ Tuples are used as keys in dictionaries because they are hashable. A dictionary 
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-##Differences
+###Differences
 1. **Order:** Lists are ordered and can be accessed by index while sets are unordered and hence does not record the position or order of insertion. Accordingly, sets do not support indexing, slicing, or other sequence-like behavior.
 2. **Duplicates:** Lists can have duplicated while sets cannot have duplicates
 3. **Objects type:** Lists can contain any type of objects while sets can only have hashable objects.
 
-##Similarity
+###Similarity
 1. **Mutable:** Lists and sets are both mutable
 
-##Examples of lists:
+###Examples of using lists:
 
 
-##Examples of Sets:
+###Examples of using Sets:
 Basic examples include membership testing and eliminating duplicates
 
-##Performance:
-
+###Performance:
+Finding an element in a set is vastly faster, especially for large sets. That is because the set uses a hash function to map to a bucket. Since Python implementations automatically resize that hash table, the speed can be constant  no matter the size of the set.
+In contrast, to evaluate whether an object is a member of a list, Python has to compare every single member for equality.
 
 ---
 

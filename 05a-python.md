@@ -58,7 +58,7 @@ Lambda is the keyword used in python to describe an anonymous function. Anonymou
 double = lambda x: x * 2
 print(double(5))
 
-* * Example 2:
+* *Example 2:
 sorted(["Pallavi", "Jai", "Nayab", "anushri"], key = lambda word: word.lower())
 
 

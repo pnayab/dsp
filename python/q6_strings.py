@@ -8,6 +8,12 @@ def donuts(count):
     form 'Number of donuts: <count>', where <count> is the number
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
+    if count >=10:
+        donuts = 'Number of donuts: many'
+    else: 
+        donuts = 'Number of donuts:' + str(count)
+    return donuts
+
 
     >>> donuts(4)
     'Number of donuts: 4'
@@ -37,6 +43,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    newstr = ""
+    if len(s) > 2:
+        newstr = s[:2] + s[-2:]       
+    return newstr
     raise NotImplementedError
 
 

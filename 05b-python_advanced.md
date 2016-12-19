@@ -59,14 +59,29 @@ bryanma@upenn.edu
 
 ### Part III - Dictionary
 
-####Q6.  Create a dictionary in the below format:
+####Q6.  Create a dictionary i
+n the below format:
 ```
 faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']],
               'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']]}
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> faculty_dict = {'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], 
+                               ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']],
+              'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], 
+                     ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'],
+                     ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']],
+               'Parkar': [['Ph.D.', 'Associate Professor', 'new@mail.med.upenn.edu'],
+                     ['Ph.D.', 'Professor', 'parkaar@upenn.edu']],
+                'Parkar2':  [['Ph.D.', 'Associate Professor', 'new@mail.med.upenn.edu'],
+                     ['Ph.D2.', 'Professor', 'parkaar@upenn.edu']]}
+
+count = 1
+for c in faculty_dict:
+    if count <=3:
+        print (c, faculty_dict[c])
+        count += 1
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 

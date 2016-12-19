@@ -144,6 +144,22 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    substr1 = "not"
+    substr2 = "bad"
+    newstr = ""
+    if (substr1 in s) and (substr2 in s):
+            a = s.find(substr1)
+            b = s.find(substr2)
+            if b > a:
+                newstr += s[:(a-1)]
+                newstr += " good"
+                newstr += s[(b+3):]
+            else:
+                newstr = s
+    else:
+        newstr = s
+                
+    return newstr
     raise NotImplementedError
 
 

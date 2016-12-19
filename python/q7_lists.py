@@ -7,6 +7,15 @@ def match_ends(words):
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
     of the string are the same.
+    
+    
+    count = 0
+    for i in range(len(words)):
+        if (len(words[i]) >= 2):
+            if words[i][0] == words[i][-1]:
+                count += 1
+    return count
+    
 
     >>> match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
     3
@@ -32,7 +41,22 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+    x_list = []
+    other_list = []
+    new_list = []
+    for i in range(len(words)):
+        if words[i][0] == 'x': 
+            x_list.append(words[i])
+        else:
+            other_list.append(words[i])
+            
+    other_list.sort()
+    x_list.sort()
+    x_list.append(other_list)
+    return x_list
+    
     raise NotImplementedError
+    
 
 
 def sort_last(tuples):
@@ -49,6 +73,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
+    return sorted(tuples, key=lambda x:x[1])
     raise NotImplementedError
 
 

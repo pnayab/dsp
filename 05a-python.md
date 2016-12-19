@@ -69,11 +69,11 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 List comprehensions provide compact, elegant, and efficient ways to encode a few common idioms in programming. List comprehensions are a tool for transforming one list (any iterable actually) into another list. During this transformation, elements can be conditionally included in the new list and each element can be transformed as needed.
 
-new_things = []
+`new_things = []
  for items in old_things:
     if condition_based_on(ITEM):
        new_things.append("something with " + ITEM)
-
+`
 *
 We can rewrite this for loop as a list comprehension:
 * 

@@ -67,21 +67,9 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> faculty_dict = {'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], 
-                               ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']],
-              'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], 
-                     ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'],
-                     ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']],
-               'Parkar': [['Ph.D.', 'Associate Professor', 'new@mail.med.upenn.edu'],
-                     ['Ph.D.', 'Professor', 'parkaar@upenn.edu']],
-                'Parkar2':  [['Ph.D.', 'Associate Professor', 'new@mail.med.upenn.edu'],
-                     ['Ph.D2.', 'Professor', 'parkaar@upenn.edu']]}
-
->>count = 1
-for c in faculty_dict:
-    if count <=3:
-        print (c, faculty_dict[c])
-        count += 1
+>> ('Li', [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']])
+('Parkar', [['Ph.D.', 'Associate Professor', 'new@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'parkaar@upenn.edu']])
+('Parkar2', [['Ph.D.', 'Associate Professor', 'new@mail.med.upenn.edu'], ['Ph.D2.', 'Professor', 'parkaar@upenn.edu']])
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -91,7 +79,12 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> (('Hongzhe', 'Li'), ['Ph.D.', 'Professor', 'hongzhe@upenn.edu'])
+(('Mingyao', 'Li'), ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'])
+(('Jonas', 'Ellenberg'), ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu'])
+
+
+
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 

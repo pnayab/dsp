@@ -33,6 +33,7 @@ How are Python lists and sets similar and different? Give examples of using both
 1. **Order:** Lists are ordered and can be accessed by index while sets are unordered and hence does not record the position or order of insertion. Accordingly, sets do not support indexing, slicing, or other sequence-like behavior.
 2. **Duplicates:** Lists can have duplicated while sets cannot have duplicates
 3. **Objects type:** Lists can contain any type of objects while sets can only have hashable objects.
+4. **Mathematical operations:** Sets support mathematical operations like union, intersection, difference, and symmetric difference.
 
 ###Similarity
 1. **Mutable:** Lists and sets are both mutable
@@ -66,9 +67,57 @@ sorted(["Pallavi", "Jai", "Nayab", "anushri"], key = lambda word: word.lower())
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehensions provide compact, elegant, and efficient ways to encode a few common idioms in programming. List comprehensions are a tool for transforming one list (any iterable actually) into another list. During this transformation, elements can be conditionally included in the new list and each element can be transformed as needed.
 
----
+* *
+new_things = []
+for items in old_things:
+    if condition_based_on(ITEM):
+        new_things.append("something with " + ITEM)---
+* *
+We can rewrite this for loop as a list comprehension:
+* *
+new_things = ["something with " + ITEM for ITEM in old_things if condition_based_on(ITEM)]
+* *
+
+Example 1: with map
+* *
+def capitalise_all(t):
+    res = []
+    for s in t:
+        res.append(s.capitalize())
+    return res
+* *
+Equivalent with list comprehension
+* *
+def capitalise_all(t):
+    return [s.capitalize() for s in t]
+* *
+Example 2: with filter
+* * 
+def only_upper(t):
+    res = []
+    for i in t:
+        if i.isupper():
+            res.append(i)
+    return res
+* *
+Equivalent with list comprehnesion
+* *
+def only_upper(t):
+    return [s for s in t if s.isupper()]
+* *
+Every list comprehension can be rewritten as a for loop but not every for loop can be rewritten as a list comprehension.
+List comprehensions are concise and easy to read for simple expressions. They are also usually much faster than the equivalent for loops used in maps and filters.
+
+**Set Comprehensions:**
+Similar to List Comprehensions.
+s = {x for x in range(10)}
+
+**Dictionary Comprehension:**
+Dict comprehensions can be used to create dictionaries from arbitrary key and value expressions:
+a = {x: x+2 for x in (2, 4, 6)}
+
 
 ###Complete the following problems by editing the files below:
 

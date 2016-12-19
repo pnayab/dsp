@@ -77,7 +77,7 @@ Print the first 3 key and value pairs of the dictionary:
                 'Parkar2':  [['Ph.D.', 'Associate Professor', 'new@mail.med.upenn.edu'],
                      ['Ph.D2.', 'Professor', 'parkaar@upenn.edu']]}
 
-count = 1
+>>count = 1
 for c in faculty_dict:
     if count <=3:
         print (c, faculty_dict[c])

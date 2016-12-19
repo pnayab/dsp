@@ -171,7 +171,30 @@ def front_back(a, b):
     'abcde', the front half is 'abc', the back half 'de'. Given 2
     strings, a and b, return a string of the form a-front + b-front +
     a-back + b-back
+    
+    
+    newstr1 = ""
+    newstr2= ""
+    str1=""
+    newstr1 = split_half(a)
+    newstr2 = split_half(b)
+    str1 += newstr1[0] + newstr2[0] + newstr1[1] + newstr2[1]
+    return(str1)
 
+def split_half(a):
+    halfa = len(a)/2.00
+    a1=""
+    a2=""
+    if (len(a)%2 == 0):
+        a1 += a[0:int(halfa)]
+        a2 += a[int(halfa):(len(a))]   
+    else:
+        half = int(halfa) + 1
+        a1 += a[:half]
+        a2 += a[half:]
+    return (a1,a2)
+    
+    
     >>> front_back('abcd', 'xy')
     'abxcdy'
     >>> front_back('abcde', 'xyz')

@@ -66,6 +66,15 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    newstr = ""
+    newstr += s[0]
+    for i in range(1, len(s)):
+        if s[i] == s[0]:
+            newstr += '*'
+        else:
+            newstr += s[i]
+    return newstr
+
     raise NotImplementedError
 
 
@@ -84,6 +93,13 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+     newstr = ""
+    newstr += b[:2]
+    newstr += a[2:]
+    newstr += " "
+    newstr += a[:2]
+    newstr += b[2:]
+    return newstr
     raise NotImplementedError
 
 
@@ -101,6 +117,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    newstr = s
+    if len(s) >= 3:
+        if s[-3:] == "ing":
+            newstr += "ly"
+        else:
+            newstr += "ing"
+    return newstr
     raise NotImplementedError
 
 

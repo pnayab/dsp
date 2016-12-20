@@ -53,3 +53,29 @@ for row in csv_f:
 
 print degree_list
 f.close()
+
+Q4:
+import csv
+import re
+
+f = open("faculty.csv")
+txt = f.read()[1:]
+header = txt.splitlines()[:1]
+lines = txt.splitlines()[1:]
+
+csv_f = csv.reader(lines)
+
+degree_list = []
+for row in csv_f:
+    degree_list.append(row[3])
+
+domain = set()
+i=0
+for i in range(len(degree_list)):    
+    domain.add(re.search('@.+', degree_list[i]).group())
+
+print "There are %s different email domains" % len(domain)
+print "Here is the list of unique email domains %s" % domain
+
+
+f.close()

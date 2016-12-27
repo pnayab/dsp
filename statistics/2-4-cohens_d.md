@@ -5,71 +5,69 @@
 
 Code:
 
-from __future__ import print_function
+    from __future__ import print_function
 
-import math
-import numpy as np
+    import math
+    import numpy as np
 
-import nsfg
-import thinkstats2
-import thinkplot
+    import nsfg
+    import thinkstats2
+    import thinkplot
+    def MakeFrames():
+        """Reads pregnancy data and partitions first babies and others.
 
+        returns: DataFrames (all live births, first babies, others)
+        """
+        preg = nsfg.ReadFemPreg()
 
-def MakeFrames():
-    """Reads pregnancy data and partitions first babies and others.
+        live = preg[preg.outcome == 1]
+        firsts = live[live.birthord == 1]
+        others = live[live.birthord != 1]
 
-    returns: DataFrames (all live births, first babies, others)
-    """
-    preg = nsfg.ReadFemPreg()
+        assert len(live) == 9148
+        assert len(firsts) == 4413
+        assert len(others) == 4735
 
-    live = preg[preg.outcome == 1]
-    firsts = live[live.birthord == 1]
-    others = live[live.birthord != 1]
-
-    assert len(live) == 9148
-    assert len(firsts) == 4413
-    assert len(others) == 4735
-
-    return live, firsts, others
+        return live, firsts, others
 
 
-def Summarize(live, firsts, others):
-    """Print various summary statistics."""
+    def Summarize(live, firsts, others):
+        """Print various summary statistics."""
 
-    mean = live.totalwgt_lb.mean()
-    var = live.totalwgt_lb.var()
-    std = live.totalwgt_lb.std()
+        mean = live.totalwgt_lb.mean()
+        var = live.totalwgt_lb.var()
+        std = live.totalwgt_lb.std()
 
-    print('Live mean', mean)
-    print('Live variance', var)
-    print('Live std', std)
+        print('Live mean', mean)
+        print('Live variance', var)
+        print('Live std', std)
 
-    mean1 = firsts.totalwgt_lb.mean()
-    mean2 = others.totalwgt_lb.mean()
+        mean1 = firsts.totalwgt_lb.mean()
+        mean2 = others.totalwgt_lb.mean()
 
-    var1 = firsts.totalwgt_lb.var()
-    var2 = others.totalwgt_lb.var()
+        var1 = firsts.totalwgt_lb.var()
+        var2 = others.totalwgt_lb.var()
 
-    print('Mean')
-    print('First babies', mean1)
-    print('Others', mean2)
+        print('Mean')
+        print('First babies', mean1)
+        print('Others', mean2)
 
-    print('Variance')
-    print('First babies', var1)
-    print('Others', var2)
+        print('Variance')
+        print('First babies', var1)
+        print('Others', var2)
 
-    d = thinkstats2.CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
-    print('Cohen d', d)
-
-
-def main(script):
-    live, firsts, others = MakeFrames()
-    Summarize(live, firsts, others)
+        d = thinkstats2.CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
+        print('Cohen d', d)
 
 
-if __name__ == '__main__':
-    import sys
-    main(*sys.argv)
+    def main(script):
+        live, firsts, others = MakeFrames()
+        Summarize(live, firsts, others)
+
+
+    if __name__ == '__main__':
+        import sys
+        main(*sys.argv)
 
 
 

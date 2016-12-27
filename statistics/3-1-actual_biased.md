@@ -3,15 +3,15 @@
 >> The mean of the actual distribution is 1.024 and the mean of the biased distribution is 2.403, which is more than double of the actual mean. The plotted figure shows that in the biased distribution there is a higher probability of more children under 18 years.The actual distribution shows a higher probability that there are no children in the family. This is not there in the unbiased distribution.What is unclear is how the actual distribution shows fewer than 0 children in a family.  
 
 Code:
-  from __future__ import print_function
-  import math
-  import numpy as np
+      from __future__ import print_function
+      import math
+      import numpy as np
 
-  import nsfg
-  import first
-  import thinkstats2
-  import thinkplot
-  import chap01soln
+      import nsfg
+      import first
+      import thinkstats2
+      import thinkplot
+      import chap01soln
 
 
 

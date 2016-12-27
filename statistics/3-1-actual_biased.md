@@ -4,7 +4,6 @@
 
 Code:
   from __future__ import print_function
-
   import math
   import numpy as np
 
@@ -17,62 +16,62 @@ Code:
 
 
 
-  def BiasPmf(pmf, label=''):
-      """Returns the Pmf with oversampling proportional to value.
+    def BiasPmf(pmf, label=''):
+        """Returns the Pmf with oversampling proportional to value.
 
 
-      Args:
-        pmf: Pmf object.
-        label: string label for the new Pmf.
+        Args:
+          pmf: Pmf object.
+          label: string label for the new Pmf.
 
-       Returns:
-         Pmf object
-      """
-      new_pmf = pmf.Copy(label=label)
+         Returns:
+           Pmf object
+        """
+        new_pmf = pmf.Copy(label=label)
 
-      for x, p in pmf.Items():
-          new_pmf.Mult(x, x)
+        for x, p in pmf.Items():
+            new_pmf.Mult(x, x)
 
-      new_pmf.Normalize()
-      return new_pmf
-
-
+        new_pmf.Normalize()
+        return new_pmf
 
 
 
-  def ClassSizes():
-      """Generate PMFs of observed and actual class size.
-      """
-      resp = chap01soln.ReadFemResp()
-
-      # form the pmf
-      pmf = thinkstats2.Pmf(resp.numkdhh, label='actual')
-      print('mean', pmf.Mean())
-      print('var', pmf.Var())
-
-      # Display the pmf
-      thinkplot.Pmf(pmf, label = 'numdkdhh')
-      thinkplot.show()
-
-      # compute the biased pmf
-      biased_pmf = BiasPmf(pmf, label='biased')
-      print('Biased mean', biased_pmf.Mean())
-      print('Biased var', biased_pmf.Var())
-
-      #Display actual and biased pmf
-      thinkplot.PrePlot(2)
-      thinkplot.Pmfs([pmf, biased_pmf])
-      thinkplot.Show()
-
-  def main(script):
-      live, firsts, others = first.MakeFrames()
-
-      ClassSizes()
 
 
-if __name__ == '__main__':
-    import sys
-    main(*sys.argv)
+    def ClassSizes():
+        """Generate PMFs of observed and actual class size.
+        """
+        resp = chap01soln.ReadFemResp()
+
+        # form the pmf
+        pmf = thinkstats2.Pmf(resp.numkdhh, label='actual')
+        print('mean', pmf.Mean())
+        print('var', pmf.Var())
+
+        # Display the pmf
+        thinkplot.Pmf(pmf, label = 'numdkdhh')
+        thinkplot.show()
+
+        # compute the biased pmf
+        biased_pmf = BiasPmf(pmf, label='biased')
+        print('Biased mean', biased_pmf.Mean())
+        print('Biased var', biased_pmf.Var())
+
+        #Display actual and biased pmf
+        thinkplot.PrePlot(2)
+        thinkplot.Pmfs([pmf, biased_pmf])
+        thinkplot.Show()
+
+    def main(script):
+        live, firsts, others = first.MakeFrames()
+
+        ClassSizes()
+
+
+  if __name__ == '__main__':
+      import sys
+      main(*sys.argv)
 
 
 

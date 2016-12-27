@@ -3,15 +3,16 @@
 >> The CDF of percentile ranks for 1000 random numbers is a straight line which means its a normal distribution. The PMF is not useful here as the number of values ia large. 
 
 Code:
-  import random
-  import thinkstats2
-  import thinkplot
 
-  r = [random.random() for _ in range(1000)]
-  pmf = thinkstats2.Pmf(r)
-  thinkplot.Pmf(pmf)
-  thinkplot.show()
+     import random
+     import thinkstats2
+     import thinkplot
 
-  cdf = thinkstats2.Cdf(r)
-  thinkplot.Cdf(cdf)
-  thinkplot.show()
+     r = [random.random() for _ in range(1000)]
+     pmf = thinkstats2.Pmf(r)
+     thinkplot.Pmf(pmf)
+     thinkplot.show()
+
+     cdf = thinkstats2.Cdf(r)
+     thinkplot.Cdf(cdf)
+     thinkplot.show()

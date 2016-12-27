@@ -1,6 +1,6 @@
 [Think Stats Chapter 4 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2005.html#toc41) (a random distribution)
 
->> The CDF of percentile ranks for 1000 random numbers is a straight line which means its a normal distribution. The PMF is not useful here as the number of values ia large. 
+>> The CDF of percentile ranks for 1000 random numbers is a straight line which means its a normal distribution. The PMF is not useful here as the number of values is large. 
 
 Code:
 

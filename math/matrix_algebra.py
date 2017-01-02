@@ -21,7 +21,7 @@ print a.ndim
 =>2
 1.5:
 
-Vector Operations:
+#Vector Operations:
 import numpy as np
 u = np.array([6,2,-3,5])
 v = np.array([3,5,-1,4])
@@ -34,5 +34,12 @@ print "u - v = ", u-v
 print "au = ", 6 * u
 print "uv = ", uv
 print "Magnitude of u = ", magu
+"""Results:
+u + v =  [ 9  7 -4  9]
+u - v =  [ 3 -3 -2  1]
+au =  [ 36  12 -18  30]
+uv =  51
+Magnitude of u =  8.60232526704
+"""
 
 

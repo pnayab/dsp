@@ -88,7 +88,12 @@ Print the first 3 key and value pairs of the dictionary:
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->> 
+    >> ('Bellamy', 'Scarlett') [' Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']
+    ('Bilker', 'Warren') ['Ph.D.', 'Professor', 'warren@upenn.edu']
+    ('Bryan', 'Matthew') [' PhD', 'Professor', 'bryanma@upenn.edu']
+    ('Chen', 'Jinbo') [' Ph.D.', 'Associate Professor', 'jinboche@upenn.edu']
+    ('Ellenberg', 'Jonas') [' Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']
+    ('Ellenberg', 'Susan') [' Ph.D.', 'Professor', 'sellenbe@upenn.edu']
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 

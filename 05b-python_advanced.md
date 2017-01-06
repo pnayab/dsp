@@ -82,9 +82,7 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
-    >>  Rebecca Hubbard [' PhD', 'Associate Professor of Biostatistics', 'rhubb@mail.med.upenn.edu']
-    Yimei Li [' Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu']
-    Jonas Ellenberg [' Ph.D.', 'Professor of Biostatistics', 'jellenbe@mail.med.upenn.edu']
+    >>  {('Joffe', 'Marshall'): [' MD MPH Ph.D', 'Professor', 'mjoffe@mail.med.upenn.edu'], ('Propert', 'Kathleen'): [' Sc.D.', 'Professor', 'propert@mail.med.upenn.edu'], ('Landis', 'J.'): [' B.S.Ed. M.S. Ph.D.', 'Professor', 'jrlandis@mail.med.upenn.edu'],
 
 
 

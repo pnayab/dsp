@@ -49,7 +49,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+1) -d	Displays only directories.
+2) -R	Displays subdirectories as well.
+3) -t	Displays newest files first. (based on timestamp)
+4) -u	Displays files by the file access time.
+5) -c	Displays files by file timestamp.
 
 ---
 

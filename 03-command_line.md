@@ -35,13 +35,13 @@ What do the following commands do:
 `ls -Glp`  
 
 > > 
-`ls` - lists the contents of the current directory
-`ls -a`  - lists the contents of the current directory including all the hidden files
-`ls -l`  - lists the contents of the current directorywith long format: showing the permissions
-`ls -lh` - list wil long format with file size
-`ls -lah` - combines the meaning of ls -a -l and -h
-`ls -t`  - sorted by date and time
-`ls -Glp`- 
+`ls` - lists the contents of the current directory  
+`ls -a`  - lists the contents of the current directory including all the hidden files  
+`ls -l`  - lists the contents of the current directorywith long format: showing the permissions  
+`ls -lh` - list wil long format with file size  
+`ls -lah` - combines the meaning of ls -a -l and -h  
+`ls -t`  - sorted by date and time  
+`ls -Glp`-   
 
 ---
 

@@ -10,16 +10,16 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > > 
-1) cat > *file* - places standard input into file
-2) more *file* - places the contents of a file
-3) touch *file* - create or update file
-4) cp *file1* *file2* - copy file1 to file2
-5) mv *file1* *file2* - move file1 to file2
-6) less *file* - displays the contents of a file one screen at a time
-7) rm *file* - delete file
-8) rm -r *dir* - delete directory *dir*
-9) locate *file* - find all instances of the file.
-10) pushd,popd - The pushd command takes your current directory and "pushes" it into a list for later, then it changes to another directory. It's like saying, "Save where I am, then go here."The popd command takes the last directory you pushed and "pops" it off, taking you back there.
+1) cat > *file* - places standard input into file  
+2) more *file* - places the contents of a file  
+3) touch *file* - create or update file  
+4) cp *file1* *file2* - copy file1 to file2  
+5) mv *file1* *file2* - move file1 to file2  
+6) less *file* - displays the contents of a file one screen at a time  
+7) rm *file* - delete file  
+8) rm -r *dir* - delete directory *dir*  
+9) locate *file* - find all instances of the file.    
+10) pushd,popd - The pushd command takes your current directory and "pushes" it into a list for later, then it changes to another directory. It's like saying, "Save where I am, then go here."The popd command takes the last directory you pushed and "pops" it off, taking you back there.  
 
 ---
 

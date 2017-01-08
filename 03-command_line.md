@@ -62,7 +62,25 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs reads items from the standard input, delimited by blanks or newlines, and executes the command (default is /bin/echo) one or more times with any initial-arguments followed by items read from standard input. It breaks the list of arguments into sublists small enough to be acceptable
+eg:
+When you type xargs without any argument, it will prompt you to enter the input through stdin:
+$ xargs
+Hi,
+Welcome to TGS.
 
+After you type something, press ctrl+d, which will echo the string back to you on stdout as shown below.
+
+$ xargs
+Hi,
+Welcome to TGS.Hi, Welcome to TGS.
+Another example:
+$ ls
+one.c  one.h  two.c  two.h
+
+$ find . -name "*.c" | xargs rm -rf
+
+$ ls
+one.h  two.h
  
 
